@@ -1,0 +1,5 @@
+What we are building on this project: 
+dotNet Core
+Angular
+ Entity Framework
+ Bootstrap
