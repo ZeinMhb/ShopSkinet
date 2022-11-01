@@ -1,16 +1,17 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.EntityFrameworkCore.DbContext
+using Microsoft.EntityFrameworkCore.DbContex;
 
 namespace api.Data
 {
     public class StoreContext : DbContext
     {
-        public StoreContext (DbContextOptions options) :base(options){
+        public StoreContext(DbContextOptions options) : base(options)
+        {
 
         }
-        
-        public DbSet<Product> Products{ get; set;}
+
+        public DbSet<Product> Products { get; set; }
     }
 }
