@@ -2,12 +2,10 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using api.Data;
 
 #nullable disable
 
-namespace api.Data.Migrations
+namespace infrastructure.Data.Migrations
 {
     [DbContext(typeof(StoreContext))]
     [Migration("20221101103256_InitialCreate")]

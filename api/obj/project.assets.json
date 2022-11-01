@@ -657,6 +657,31 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/core.dll": {}
+        }
+      },
+      "infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.10",
+          "Microsoft.EntityFrameworkCore.Sqlite": "6.0.10",
+          "core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/infrastructure.dll": {}
+        }
       }
     }
   },
@@ -1662,15 +1687,24 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "core/1.0.0": {
+      "type": "project",
+      "path": "../Core/core.csproj",
+      "msbuildProject": "../Core/core.csproj"
+    },
+    "infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../infrastructure/infrastructure.csproj",
+      "msbuildProject": "../infrastructure/infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.AspNetCore.OpenApi >= 7.0.0-rc.2.22476.2",
-      "Microsoft.EntityFrameworkCore >= 6.0.10",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.10",
-      "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.10",
-      "Swashbuckle.AspNetCore >= 6.4.0"
+      "Swashbuckle.AspNetCore >= 6.4.0",
+      "infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1679,11 +1713,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GandomProject\\ShopSkinet\\api\\api.csproj",
+      "projectUniqueName": "D:\\gandomproject\\shopskinet\\api\\api.csproj",
       "projectName": "api",
-      "projectPath": "D:\\GandomProject\\ShopSkinet\\api\\api.csproj",
+      "projectPath": "D:\\gandomproject\\shopskinet\\api\\api.csproj",
       "packagesPath": "C:\\Users\\Office\\.nuget\\packages\\",
-      "outputPath": "D:\\GandomProject\\ShopSkinet\\api\\obj\\",
+      "outputPath": "D:\\gandomproject\\shopskinet\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Office\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1697,7 +1731,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\gandomproject\\shopskinet\\infrastructure\\infrastructure.csproj": {
+              "projectPath": "D:\\gandomproject\\shopskinet\\infrastructure\\infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1714,17 +1752,9 @@
             "target": "Package",
             "version": "[7.0.0-rc.2.22476.2, )"
           },
-          "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[6.0.10, )"
-          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
-            "target": "Package",
-            "version": "[6.0.10, )"
-          },
-          "Microsoft.EntityFrameworkCore.Sqlite": {
             "target": "Package",
             "version": "[6.0.10, )"
           },

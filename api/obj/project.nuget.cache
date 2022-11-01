@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "idUNtVR1PG/p7BZMu3CG52W6Wo08Bapuk6zCDO/s8RR8eA3UA3n2PzHlLBrE8BbnJ98lMEJa34GuOn7DVL0DUQ==",
+  "dgSpecHash": "BHb9Gq+nqq/VwBOryatT0aTRLXs8qQQZ4KRGurb/s/x6t9d2CUWJba9+HE/UsTi7URscok0+NPkXQS7RTCF/+w==",
   "success": true,
-  "projectFilePath": "D:\\GandomProject\\ShopSkinet\\api\\api.csproj",
+  "projectFilePath": "D:\\gandomproject\\shopskinet\\api\\api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Office\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Office\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.0-rc.2.22476.2\\microsoft.aspnetcore.openapi.7.0.0-rc.2.22476.2.nupkg.sha512",

@@ -57,3 +57,7 @@ D:\GandomProject\ShopSkinet\api\bin\Debug\net7.0\runtimes\win-x64\native\e_sqlit
 D:\GandomProject\ShopSkinet\api\bin\Debug\net7.0\runtimes\win-x86\native\e_sqlite3.dll
 D:\GandomProject\ShopSkinet\api\bin\Debug\net7.0\Humanizer.dll
 D:\GandomProject\ShopSkinet\api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\gandomproject\shopskinet\api\bin\Debug\net7.0\core.dll
+D:\gandomproject\shopskinet\api\bin\Debug\net7.0\infrastructure.dll
+D:\gandomproject\shopskinet\api\bin\Debug\net7.0\infrastructure.pdb
+D:\gandomproject\shopskinet\api\bin\Debug\net7.0\core.pdb
