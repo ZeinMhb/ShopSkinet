@@ -27,6 +27,10 @@ api/bin/
 api/obj/
 api/Obj/
 api/Bin/
+core/bin/
+core/obj/
+core/Obj/
+core/Bin/
 
 # Visual Studio 2015 cache/options directory
 .vs/
