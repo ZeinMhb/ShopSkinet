@@ -31,7 +31,10 @@ core/bin/
 core/obj/
 core/Obj/
 core/Bin/
-
+infrastructure/bin/
+infrastructure/obj/
+infrastructure/Obj/
+infrastructure/Bin/
 # Visual Studio 2015 cache/options directory
 .vs/
 

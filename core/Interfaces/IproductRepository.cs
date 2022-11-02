@@ -8,7 +8,7 @@ namespace core.Interfaces
 {
     public interface IproductRepository
     {
-        Task<Product> GetProductByIdAsync(int id);
+        Task<Product?> GetProductByIdAsync(int id);
         Task<IReadOnlyList<Product>> GetProductsAsync();
     }
 }

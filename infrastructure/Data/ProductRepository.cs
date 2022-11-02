@@ -1,8 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using core.Interfaces;
+using core.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace infrastructure.Data
 {
@@ -13,12 +11,13 @@ namespace infrastructure.Data
         {
             _context = context;
         }
-        public async Task<Product> GetProductByIdAsync(int id)
+        public async Task<Product?> GetProductByIdAsync(int id)
         {
-            return await _context.Products.
-         }
-        Task<IReadOnlyList<Product>> GetProductsAsync()
+            return await _context.Products.FindAsync(id);
+        }
+        public async Task<IReadOnlyList<Product>> GetProductsAsync()
         {
+            return await _context.Products.ToListAsync();
 
         }
 
