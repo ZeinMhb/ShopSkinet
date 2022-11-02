@@ -1167,38 +1167,39 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Microsoft.EntityFrameworkCore >= 6.0.10",
       "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.10",
       "core >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Office\\.nuget\\packages\\": {}
+    "C:\\Users\\ARA\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\gandomproject\\shopskinet\\infrastructure\\infrastructure.csproj",
+      "projectUniqueName": "I:\\GandomCodeTest\\ShopSkinet\\infrastructure\\infrastructure.csproj",
       "projectName": "infrastructure",
-      "projectPath": "D:\\gandomproject\\shopskinet\\infrastructure\\infrastructure.csproj",
-      "packagesPath": "C:\\Users\\Office\\.nuget\\packages\\",
-      "outputPath": "D:\\gandomproject\\shopskinet\\infrastructure\\obj\\",
+      "projectPath": "I:\\GandomCodeTest\\ShopSkinet\\infrastructure\\infrastructure.csproj",
+      "packagesPath": "C:\\Users\\ARA\\.nuget\\packages\\",
+      "outputPath": "I:\\GandomCodeTest\\ShopSkinet\\infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Office\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ARA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\gandomproject\\shopskinet\\Core\\core.csproj": {
-              "projectPath": "D:\\gandomproject\\shopskinet\\Core\\core.csproj"
+            "I:\\GandomCodeTest\\ShopSkinet\\Core\\core.csproj": {
+              "projectPath": "I:\\GandomCodeTest\\ShopSkinet\\Core\\core.csproj"
             }
           }
         }
@@ -1213,10 +1214,6 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[6.0.10, )"
-          },
           "Microsoft.EntityFrameworkCore.Sqlite": {
             "target": "Package",
             "version": "[6.0.10, )"

@@ -10,3 +10,15 @@ D:\gandomproject\shopskinet\Core\obj\Debug\net7.0\core.dll
 D:\gandomproject\shopskinet\Core\obj\Debug\net7.0\refint\core.dll
 D:\gandomproject\shopskinet\Core\obj\Debug\net7.0\core.pdb
 D:\gandomproject\shopskinet\Core\obj\Debug\net7.0\ref\core.dll
+I:\GandomCodeTest\ShopSkinet\Core\bin\Debug\net7.0\core.deps.json
+I:\GandomCodeTest\ShopSkinet\Core\bin\Debug\net7.0\core.dll
+I:\GandomCodeTest\ShopSkinet\Core\bin\Debug\net7.0\core.pdb
+I:\GandomCodeTest\ShopSkinet\Core\obj\Debug\net7.0\core.csproj.AssemblyReference.cache
+I:\GandomCodeTest\ShopSkinet\Core\obj\Debug\net7.0\core.GeneratedMSBuildEditorConfig.editorconfig
+I:\GandomCodeTest\ShopSkinet\Core\obj\Debug\net7.0\core.AssemblyInfoInputs.cache
+I:\GandomCodeTest\ShopSkinet\Core\obj\Debug\net7.0\core.AssemblyInfo.cs
+I:\GandomCodeTest\ShopSkinet\Core\obj\Debug\net7.0\core.csproj.CoreCompileInputs.cache
+I:\GandomCodeTest\ShopSkinet\Core\obj\Debug\net7.0\core.dll
+I:\GandomCodeTest\ShopSkinet\Core\obj\Debug\net7.0\refint\core.dll
+I:\GandomCodeTest\ShopSkinet\Core\obj\Debug\net7.0\core.pdb
+I:\GandomCodeTest\ShopSkinet\Core\obj\Debug\net7.0\ref\core.dll

@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "D:\\gandomproject\\shopskinet\\infrastructure\\infrastructure.csproj": {}
+    "I:\\GandomCodeTest\\ShopSkinet\\infrastructure\\infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\gandomproject\\shopskinet\\Core\\core.csproj": {
+    "I:\\GandomCodeTest\\ShopSkinet\\Core\\core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\gandomproject\\shopskinet\\Core\\core.csproj",
+        "projectUniqueName": "I:\\GandomCodeTest\\ShopSkinet\\Core\\core.csproj",
         "projectName": "core",
-        "projectPath": "D:\\gandomproject\\shopskinet\\Core\\core.csproj",
-        "packagesPath": "C:\\Users\\Office\\.nuget\\packages\\",
-        "outputPath": "D:\\gandomproject\\shopskinet\\Core\\obj\\",
+        "projectPath": "I:\\GandomCodeTest\\ShopSkinet\\Core\\core.csproj",
+        "packagesPath": "C:\\Users\\ARA\\.nuget\\packages\\",
+        "outputPath": "I:\\GandomCodeTest\\ShopSkinet\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Office\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ARA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,30 +59,32 @@
         }
       }
     },
-    "D:\\gandomproject\\shopskinet\\infrastructure\\infrastructure.csproj": {
+    "I:\\GandomCodeTest\\ShopSkinet\\infrastructure\\infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\gandomproject\\shopskinet\\infrastructure\\infrastructure.csproj",
+        "projectUniqueName": "I:\\GandomCodeTest\\ShopSkinet\\infrastructure\\infrastructure.csproj",
         "projectName": "infrastructure",
-        "projectPath": "D:\\gandomproject\\shopskinet\\infrastructure\\infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Office\\.nuget\\packages\\",
-        "outputPath": "D:\\gandomproject\\shopskinet\\infrastructure\\obj\\",
+        "projectPath": "I:\\GandomCodeTest\\ShopSkinet\\infrastructure\\infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ARA\\.nuget\\packages\\",
+        "outputPath": "I:\\GandomCodeTest\\ShopSkinet\\infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Office\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ARA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\gandomproject\\shopskinet\\Core\\core.csproj": {
-                "projectPath": "D:\\gandomproject\\shopskinet\\Core\\core.csproj"
+              "I:\\GandomCodeTest\\ShopSkinet\\Core\\core.csproj": {
+                "projectPath": "I:\\GandomCodeTest\\ShopSkinet\\Core\\core.csproj"
               }
             }
           }
@@ -95,10 +99,6 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.10, )"
-            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[6.0.10, )"

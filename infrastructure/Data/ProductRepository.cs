@@ -8,10 +8,15 @@ namespace infrastructure.Data
 {
     public class ProductRepository : IproductRepository
     {
-        Task<Product> GetProductByIdAsync(int id)
+        private readonly StoreContext _context;
+        public ProductRepository(StoreContext context)
         {
-
+            _context = context;
         }
+        public async Task<Product> GetProductByIdAsync(int id)
+        {
+            return await _context.Products.
+         }
         Task<IReadOnlyList<Product>> GetProductsAsync()
         {
 

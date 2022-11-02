@@ -8,24 +8,26 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Office\\.nuget\\packages\\": {}
+    "C:\\Users\\ARA\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\gandomproject\\shopskinet\\core\\core.csproj",
+      "projectUniqueName": "I:\\GandomCodeTest\\ShopSkinet\\Core\\core.csproj",
       "projectName": "core",
-      "projectPath": "D:\\gandomproject\\shopskinet\\core\\core.csproj",
-      "packagesPath": "C:\\Users\\Office\\.nuget\\packages\\",
-      "outputPath": "D:\\gandomproject\\shopskinet\\core\\obj\\",
+      "projectPath": "I:\\GandomCodeTest\\ShopSkinet\\Core\\core.csproj",
+      "packagesPath": "C:\\Users\\ARA\\.nuget\\packages\\",
+      "outputPath": "I:\\GandomCodeTest\\ShopSkinet\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Office\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ARA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
