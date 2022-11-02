@@ -1,9 +1,9 @@
-using System.Reflection.PortableExecutable;
 using infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using core.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
+// var host = CreateHostBuilder(args).Build();
 
 // Add services to the container.
 
@@ -29,5 +29,20 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var loggerFactory = services.GetRequiredService<ILoggerFactory>();
+    try
+    {
+        var context = services.GetRequiredService<StoreContext>();
+        await context.Database.MigrateAsync();
+    }
+    catch
+    {
+        var logger = loggerFactory.CreateLogger<Program>();
+        logger.LogError("An error occurred while migrating the database.");
+    }
+}
 
 app.Run();
