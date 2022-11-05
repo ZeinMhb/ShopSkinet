@@ -1,8 +1,6 @@
 using Microsoft.Extensions.Logging;
 using core.Entities;
-using System.Collections.Generic;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 
 
 
@@ -14,6 +12,8 @@ namespace infrastructure.Data
         {
             try
             {
+
+                Console.WriteLine("hi i am in seed");
                 // product brands
                 if (!context.ProductBrands.Any())
                 {
