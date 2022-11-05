@@ -23,6 +23,20 @@ namespace api.Controllers
             return Ok(products);
         }
 
+        [HttpGet]
+        public async Task<ActionResult<List<Product>>> GetProductBrands()
+        {
+            var products = await _repo.GetProductBrandsAsync();
+            return Ok(products);
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<List<Product>>> GetProductTypes()
+        {
+            var products = await _repo.GetProductTypesAsync();
+            return Ok(products);
+        }
+
         [HttpGet("{id}")]
         public async Task<Product?> GetProduct(int id)
         {
