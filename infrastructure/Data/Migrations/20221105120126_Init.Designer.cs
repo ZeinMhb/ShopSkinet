@@ -10,8 +10,8 @@ using infrastructure.Data;
 namespace infrastructure.Data.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20221102114350_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20221105120126_Init")]
+    partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -34,29 +34,29 @@ namespace infrastructure.Data.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("PicturteUrl")
+                    b.Property<string>("PictureUrl")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("ProdutcBrandId")
+                    b.Property<int>("ProductBrandId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("ProdutcTypeId")
+                    b.Property<int>("ProductTypeId")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProdutcBrandId");
+                    b.HasIndex("ProductBrandId");
 
-                    b.HasIndex("ProdutcTypeId");
+                    b.HasIndex("ProductTypeId");
 
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("core.Entities.ProdutcBrand", b =>
+            modelBuilder.Entity("core.Entities.ProductBrand", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -67,10 +67,10 @@ namespace infrastructure.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ProdutcBrands");
+                    b.ToTable("ProductBrands");
                 });
 
-            modelBuilder.Entity("core.Entities.ProdutcType", b =>
+            modelBuilder.Entity("core.Entities.ProductType", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -81,26 +81,26 @@ namespace infrastructure.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ProdutcTypes");
+                    b.ToTable("ProductTypes");
                 });
 
             modelBuilder.Entity("core.Entities.Product", b =>
                 {
-                    b.HasOne("core.Entities.ProdutcBrand", "ProdutcBrand")
+                    b.HasOne("core.Entities.ProductBrand", "ProductBrand")
                         .WithMany()
-                        .HasForeignKey("ProdutcBrandId")
+                        .HasForeignKey("ProductBrandId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("core.Entities.ProdutcType", "ProdutcType")
+                    b.HasOne("core.Entities.ProductType", "ProductType")
                         .WithMany()
-                        .HasForeignKey("ProdutcTypeId")
+                        .HasForeignKey("ProductTypeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("ProdutcBrand");
+                    b.Navigation("ProductBrand");
 
-                    b.Navigation("ProdutcType");
+                    b.Navigation("ProductType");
                 });
 #pragma warning restore 612, 618
         }
