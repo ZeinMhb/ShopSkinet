@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using core.Entities;
 using core.Interfaces;
 
@@ -10,50 +9,59 @@ namespace api.Controllers
     [Route("api/[controller]/[action]")]
     public class ProductsController : ControllerBase
     {
-        private readonly IproductRepository _repo;
-        public ProductsController(IproductRepository repo)
+        private readonly IGenericRepository<Product> _productRepo;
+        private readonly IGenericRepository<ProductBrand> _productBrandRepo;
+        private readonly IGenericRepository<ProductType> _productTypeRepo;
+        public ProductsController(IGenericRepository<Product> productsRepo,
+         IGenericRepository<ProductBrand> productBrandRepo,
+         IGenericRepository<ProductType> productTypeRepo)
         {
-            _repo = repo;
+            _productRepo = productsRepo;
+            _productBrandRepo = productBrandRepo;
+            _productTypeRepo = productTypeRepo;
         }
 
         [HttpGet]
         public async Task<ActionResult<List<Product>>> GetProducts()
         {
-            var products = await _repo.GetProductsAsync();
+            var products = await _productRepo.ListAllAsync();
             return Ok(products);
         }
 
-        [HttpGet]
-        public async Task<ActionResult<List<Product>>> GetProductBrands()
+        [HttpGet("brands")]
+        public async Task<ActionResult<List<ProductBrand>>> GetProductBrands()
         {
-            var products = await _repo.GetProductBrandsAsync();
+            var products = await _productBrandRepo.ListAllAsync();
             return Ok(products);
         }
 
-        [HttpGet]
-        public async Task<ActionResult<List<Product>>> GetProductTypes()
+        [HttpGet("types")]
+        public async Task<ActionResult<List<ProductType>>> GetProductTypes()
         {
-            var products = await _repo.GetProductTypesAsync();
+            var products = await _productTypeRepo.ListAllAsync();
             return Ok(products);
         }
 
         [HttpGet("{id}")]
         public async Task<Product?> GetProduct(int id)
         {
-            return await _repo.GetProductByIdAsync(id);
+            return await _productRepo.GetByIdAsync(id);
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Product?>> GetProduct2(int id)
         {
-            return await _repo.GetProductByIdAsync(id);
+            return await _productRepo.GetByIdAsync(id);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProduct1(int id)
         {
-            return Ok(await _repo.GetProductByIdAsync(id));
+            // (int p1, int p32) = MyMethod(1,2);
+
+            return Ok(await _productRepo.GetByIdAsync(id));
         }
+
 
     }
 }
